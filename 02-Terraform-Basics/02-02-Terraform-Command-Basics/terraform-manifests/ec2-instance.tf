@@ -20,5 +20,5 @@ resource "aws_instance" "ec2demo" {
   instance_type = "t3.micro"
   
   # Link your existing AWS Key Pair here
-  key_name      = "703demo-keypair.pem"
+  key_name      = "703demo-keypair"
 }
