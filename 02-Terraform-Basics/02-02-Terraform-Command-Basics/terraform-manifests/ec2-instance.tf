@@ -28,12 +28,12 @@ resource "aws_instance" "ec2demo" {
               hostnamectl set-hostname c2-demo-terraform"
               
               # Install Apache Web Server
-              dnf update -y
-              dnf install -y httpd
+              sudo dnf update -y
+              sudo dnf install -y httpd
               
               # Start Apache and enable it to start on system boot
-              systemctl start httpd
-              systemctl enable httpd
+              sudo systemctl start httpd
+              sudo systemctl enable httpd
               
               # Write the custom HTML content
               echo "welcome to AK world" > /var/www/html/index.html
