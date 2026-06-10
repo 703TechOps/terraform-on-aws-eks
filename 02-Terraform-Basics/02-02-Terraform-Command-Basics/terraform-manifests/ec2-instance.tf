@@ -18,7 +18,7 @@ provider "aws" {
 resource "aws_instance" "ec2demo" {
   ami           = "ami-00e801948462f718a" # Amazon Linux in us-east-1, update as per your region
   instance_type = "t3.micro"
-
+  
   # Link your existing AWS Key Pair here
   key_name      = "703demo-keypair.pem"
 }
